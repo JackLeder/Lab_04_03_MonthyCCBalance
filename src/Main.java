@@ -15,10 +15,15 @@ public class Main
         System.out.println("Intrest is " + "17%");
 
         double FirstMonthIntrest = Balence * Intrest;
-        System.out.println("First Month Intrest due is " + FirstMonthIntrest);
 
-        double SecoundMonthIntrest = (Balence + FirstMonthIntrest) * Intrest;
-        System.out.println("Second Month Intrest due is " + SecoundMonthIntrest);
+        Balence += FirstMonthIntrest;
+        System.out.println("Balence is after one month " + Balence);
+
+        double SecondMonthIntrest = Balence * Intrest;
+        Balence += SecondMonthIntrest;
+        System.out.println("Balence is after two months" + Balence);
+
+
     }
 
 }
